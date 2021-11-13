@@ -1,0 +1,617 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L motogadget:motoscopePro msp?
+U 1 1 5FBAD65A
+P 5300 1150
+F 0 "msp?" H 6128 1203 50  0000 L CNN
+F 1 "motoscopePro" H 6128 1112 50  0000 L CNN
+F 2 "" H 5300 1500 50  0001 C CNN
+F 3 "" H 5300 1500 50  0001 C CNN
+	1    5300 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4750 6550 4750
+$Comp
+L power:Earth #PWR?
+U 1 1 5FBB738E
+P 7050 7200
+F 0 "#PWR?" H 7050 6950 50  0001 C CNN
+F 1 "Earth" H 7050 7050 50  0001 C CNN
+F 2 "" H 7050 7200 50  0001 C CNN
+F 3 "~" H 7050 7200 50  0001 C CNN
+	1    7050 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5FBB7FE3
+P 5550 6750
+F 0 "#PWR?" H 5550 6500 50  0001 C CNN
+F 1 "Earth" H 5550 6600 50  0001 C CNN
+F 2 "" H 5550 6750 50  0001 C CNN
+F 3 "~" H 5550 6750 50  0001 C CNN
+	1    5550 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L motorcycle:speedSensor spd?
+U 1 1 5FBBECC0
+P 1900 2050
+F 0 "spd?" H 2145 2315 50  0001 C CNN
+F 1 "speedSensor" H 2145 2223 50  0000 C CNN
+F 2 "" H 1900 2000 50  0001 C CNN
+F 3 "" H 1900 2000 50  0001 C CNN
+	1    1900 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L motorcycle:oilPressure OIL?
+U 1 1 5FBBF736
+P 1900 2500
+F 0 "OIL?" H 2095 2765 50  0001 C CNN
+F 1 "oilPressure" H 2095 2673 50  0000 C CNN
+F 2 "" H 1900 2550 50  0001 C CNN
+F 3 "" H 1900 2550 50  0001 C CNN
+	1    1900 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L motorcycle:battery Bat?
+U 1 1 5FBC1E2D
+P 9200 6300
+F 0 "Bat?" H 9578 6542 50  0001 L CNN
+F 1 "Battery" H 9578 6496 50  0000 L CNN
+F 2 "" H 9200 6400 50  0001 C CNN
+F 3 "" H 9200 6400 50  0001 C CNN
+	1    9200 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 4750 6550 3300
+Wire Wire Line
+	2200 2050 3100 2050
+Wire Wire Line
+	5200 4600 3100 4600
+Wire Wire Line
+	3100 4600 3100 2050
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5FBC7B6C
+P 2100 4250
+F 0 "SW?" H 2100 4535 50  0001 C CNN
+F 1 "Neutral" H 2100 4443 50  0000 C CNN
+F 2 "" H 2100 4450 50  0001 C CNN
+F 3 "~" H 2100 4450 50  0001 C CNN
+	1    2100 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 4250 6200 4250
+Wire Wire Line
+	6200 4250 6200 2900
+$Comp
+L power:Earth #PWR?
+U 1 1 5FBC947D
+P 1900 4450
+F 0 "#PWR?" H 1900 4200 50  0001 C CNN
+F 1 "Earth" H 1900 4300 50  0001 C CNN
+F 2 "" H 1900 4450 50  0001 C CNN
+F 3 "~" H 1900 4450 50  0001 C CNN
+	1    1900 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 4450 1900 4250
+Wire Wire Line
+	5550 6150 5550 6750
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5FBD3154
+P 3550 6100
+F 0 "SW?" H 3550 6385 50  0000 C CNN
+F 1 "Ignition key" H 3550 6294 50  0000 C CNN
+F 2 "" H 3550 6300 50  0001 C CNN
+F 3 "~" H 3550 6300 50  0001 C CNN
+	1    3550 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 6100 3750 6100
+$Comp
+L Switch:SW_Push_45deg SW?
+U 1 1 5FBD644E
+P 2800 850
+F 0 "SW?" H 2800 1131 50  0001 C CNN
+F 1 "Hi Beam" H 2800 1039 50  0000 C CNN
+F 2 "" H 2800 850 50  0001 C CNN
+F 3 "~" H 2800 850 50  0001 C CNN
+	1    2800 850 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW?
+U 1 1 5FBD787A
+P 2800 1200
+F 0 "SW?" H 2800 1481 50  0001 C CNN
+F 1 "Horn" H 2800 1389 50  0000 C CNN
+F 2 "" H 2800 1200 50  0001 C CNN
+F 3 "~" H 2800 1200 50  0001 C CNN
+	1    2800 1200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg turn_L
+U 1 1 5FBD7EB8
+P 2800 1550
+F 0 "turn_L" H 2800 1739 50  0001 C CNN
+F 1 "Turn L" H 2800 1739 50  0000 C CNN
+F 2 "" H 2800 1550 50  0001 C CNN
+F 3 "~" H 2800 1550 50  0001 C CNN
+	1    2800 1550
+	-1   0    0    -1  
+$EndComp
+Connection ~ 3100 2050
+Wire Wire Line
+	5300 1150 5300 3100
+Wire Wire Line
+	4850 1150 4850 3300
+$Comp
+L Switch:SW_Push_45deg SW?
+U 1 1 5FBE3999
+P 7400 850
+F 0 "SW?" H 7400 1131 50  0001 C CNN
+F 1 "Start" H 7400 1039 50  0000 C CNN
+F 2 "" H 7400 850 50  0001 C CNN
+F 3 "~" H 7400 850 50  0001 C CNN
+	1    7400 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW?
+U 1 1 5FBE4ADA
+P 7400 1200
+F 0 "SW?" H 7400 1481 50  0001 C CNN
+F 1 "Change" H 7400 1389 50  0000 C CNN
+F 2 "" H 7400 1200 50  0001 C CNN
+F 3 "~" H 7400 1200 50  0001 C CNN
+	1    7400 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW?
+U 1 1 5FBE6884
+P 7400 1550
+F 0 "SW?" H 7400 1831 50  0001 C CNN
+F 1 "Turn R" H 7400 1739 50  0000 C CNN
+F 2 "" H 7400 1550 50  0001 C CNN
+F 3 "~" H 7400 1550 50  0001 C CNN
+	1    7400 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 1100 6700 1100
+Wire Wire Line
+	6700 1100 6700 1700
+Wire Wire Line
+	6700 1700 5150 1700
+Wire Wire Line
+	5150 1700 5150 1150
+Wire Wire Line
+	3100 2050 5450 2050
+Wire Wire Line
+	5450 1150 5450 2050
+$Comp
+L Device:LED D?
+U 1 1 5FBEAF95
+P 8900 3800
+F 0 "D?" H 8893 4017 50  0001 C CNN
+F 1 "Turn R" H 8893 3925 50  0000 C CNN
+F 2 "" H 8900 3800 50  0001 C CNN
+F 3 "~" H 8900 3800 50  0001 C CNN
+	1    8900 3800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5FBECA3B
+P 8900 4300
+F 0 "D?" H 8893 4517 50  0001 C CNN
+F 1 "Turn L" H 8893 4425 50  0000 C CNN
+F 2 "" H 8900 4300 50  0001 C CNN
+F 3 "~" H 8900 4300 50  0001 C CNN
+	1    8900 4300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5FBECA41
+P 8900 4600
+F 0 "D?" H 8893 4817 50  0001 C CNN
+F 1 "Turn L" H 8893 4725 50  0000 C CNN
+F 2 "" H 8900 4600 50  0001 C CNN
+F 3 "~" H 8900 4600 50  0001 C CNN
+	1    8900 4600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5FBEEEE7
+P 8900 2800
+F 0 "D?" H 8893 3017 50  0001 C CNN
+F 1 "Headlight" H 8893 2925 50  0000 C CNN
+F 2 "" H 8900 2800 50  0001 C CNN
+F 3 "~" H 8900 2800 50  0001 C CNN
+	1    8900 2800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5FBF0193
+P 8900 3100
+F 0 "D?" H 8893 3317 50  0001 C CNN
+F 1 "Hi Beam" H 8893 3225 50  0000 C CNN
+F 2 "" H 8900 3100 50  0001 C CNN
+F 3 "~" H 8900 3100 50  0001 C CNN
+	1    8900 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5FBF4827
+P 8900 5350
+F 0 "D?" H 8893 5567 50  0001 C CNN
+F 1 "Break" H 8893 5475 50  0000 C CNN
+F 2 "" H 8900 5350 50  0001 C CNN
+F 3 "~" H 8900 5350 50  0001 C CNN
+	1    8900 5350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 5050 6750 5050
+Wire Wire Line
+	8300 5050 8300 3100
+Wire Wire Line
+	8300 3100 8750 3100
+Wire Wire Line
+	6750 2800 6750 5050
+Connection ~ 6750 5050
+Wire Wire Line
+	6750 5050 8300 5050
+$Comp
+L motogadget:mspBreakoutBoxA breakoutA?
+U 1 1 5FBAEEBB
+P 7900 2850
+F 0 "breakoutA?" H 7629 3525 50  0000 C CNN
+F 1 "mspBreakoutBoxA" H 7629 3434 50  0000 C CNN
+F 2 "" H 7850 2550 50  0001 C CNN
+F 3 "" H 7850 2550 50  0001 C CNN
+	1    7900 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 2500 7600 2500
+Wire Wire Line
+	6200 2900 7600 2900
+Wire Wire Line
+	5300 3100 7600 3100
+Wire Wire Line
+	6750 2800 7600 2800
+Wire Wire Line
+	4850 3300 6550 3300
+Connection ~ 6550 3300
+Wire Wire Line
+	6550 3300 7600 3300
+Wire Wire Line
+	6200 5200 8400 5200
+Wire Wire Line
+	8400 5200 8400 2800
+Wire Wire Line
+	8400 2800 8750 2800
+Wire Wire Line
+	6200 5650 6950 5650
+Wire Wire Line
+	7600 2700 7100 2700
+Wire Wire Line
+	7100 5800 6200 5800
+Wire Wire Line
+	6950 5650 6950 3800
+Wire Wire Line
+	6950 2600 7600 2600
+$Comp
+L Device:LED D?
+U 1 1 5FBE988C
+P 8900 3500
+F 0 "D?" H 8893 3717 50  0001 C CNN
+F 1 "Turn R" H 8893 3625 50  0000 C CNN
+F 2 "" H 8900 3500 50  0001 C CNN
+F 3 "~" H 8900 3500 50  0001 C CNN
+	1    8900 3500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 2700 7100 4300
+Wire Wire Line
+	8750 3500 6950 3500
+Connection ~ 6950 3500
+Wire Wire Line
+	6950 3500 6950 2600
+Wire Wire Line
+	8750 3800 6950 3800
+Connection ~ 6950 3800
+Wire Wire Line
+	6950 3800 6950 3500
+Wire Wire Line
+	8750 4300 7100 4300
+Connection ~ 7100 4300
+Wire Wire Line
+	7100 4300 7100 4600
+Wire Wire Line
+	8750 4600 7100 4600
+Connection ~ 7100 4600
+Wire Wire Line
+	7100 4600 7100 5800
+$Comp
+L Device:L L?
+U 1 1 5FC053D3
+P 8900 1850
+F 0 "L?" H 8953 1896 50  0001 L CNN
+F 1 "Ignition Coil" V 8999 1850 50  0000 C CNN
+F 2 "" H 8900 1850 50  0001 C CNN
+F 3 "~" H 8900 1850 50  0001 C CNN
+	1    8900 1850
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5FC0691A
+P 8900 2100
+F 0 "L?" H 8953 2146 50  0001 L CNN
+F 1 "Ignition Coil" V 8999 2100 50  0000 C CNN
+F 2 "" H 8900 2100 50  0001 C CNN
+F 3 "~" H 8900 2100 50  0001 C CNN
+	1    8900 2100
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5600 1850 5600 1150
+Wire Wire Line
+	5600 1850 8750 1850
+Wire Wire Line
+	6200 5350 8750 5350
+$Comp
+L motogadget:mo.button B?
+U 1 1 5FBAFD7D
+P 4000 3050
+F 0 "B?" H 4000 2337 50  0001 C CNN
+F 1 "mo.button" H 4000 2336 50  0000 C CNN
+F 2 "" H 4000 3050 50  0001 C CNN
+F 3 "" H 4000 3050 50  0001 C CNN
+	1    4000 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2800 3250 2800
+Wire Wire Line
+	3250 2800 3250 1450
+Wire Wire Line
+	3250 1450 2900 1450
+Wire Wire Line
+	2900 1100 3150 1100
+Wire Wire Line
+	3150 1100 3150 3200
+Wire Wire Line
+	3150 3200 3700 3200
+Wire Wire Line
+	2900 750  3200 750 
+Wire Wire Line
+	3200 750  3200 3000
+Wire Wire Line
+	3200 3000 3700 3000
+Wire Wire Line
+	3700 2900 3300 2900
+Wire Wire Line
+	3300 2250 7000 2250
+Wire Wire Line
+	7000 2250 7000 1450
+Wire Wire Line
+	7000 1450 7300 1450
+Wire Wire Line
+	3700 3100 3300 3100
+Wire Wire Line
+	3300 1950 6900 1950
+Wire Wire Line
+	6900 1950 6900 750 
+Wire Wire Line
+	6900 750  7300 750 
+Wire Wire Line
+	3300 1950 3300 2250
+Connection ~ 3300 2250
+Wire Wire Line
+	3300 2250 3300 2900
+Connection ~ 3300 2900
+Wire Wire Line
+	3300 2900 3300 3100
+Wire Wire Line
+	4300 3050 4550 3050
+Wire Wire Line
+	4550 3050 4550 4750
+Wire Wire Line
+	4550 4750 5200 4750
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5FC1C229
+P 2100 3300
+F 0 "SW?" H 2100 3585 50  0001 C CNN
+F 1 "Front Brake" H 2100 3493 50  0000 C CNN
+F 2 "" H 2100 3500 50  0001 C CNN
+F 3 "~" H 2100 3500 50  0001 C CNN
+	1    2100 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5FC1EDA0
+P 2100 5350
+F 0 "SW?" H 2100 5635 50  0001 C CNN
+F 1 "Rear Brake" H 2100 5543 50  0000 C CNN
+F 2 "" H 2100 5550 50  0001 C CNN
+F 3 "~" H 2100 5550 50  0001 C CNN
+	1    2100 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3300 2300 3300
+Wire Wire Line
+	5200 5350 2300 5350
+$Comp
+L motorcycle:Rectifier U?
+U 1 1 5FC2E6DC
+P 6400 7350
+F 0 "U?" H 6375 7765 50  0001 C CNN
+F 1 "Rectifier" H 6375 7673 50  0000 C CNN
+F 2 "" H 6400 7200 50  0001 C CNN
+F 3 "" H 6400 7200 50  0001 C CNN
+	1    6400 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse F?
+U 1 1 5FC312EC
+P 7800 6400
+F 0 "F?" H 7860 6446 50  0001 L CNN
+F 1 "Main fuse" V 7905 6400 50  0000 C CNN
+F 2 "" V 7730 6400 50  0001 C CNN
+F 3 "~" H 7800 6400 50  0001 C CNN
+	1    7800 6400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5850 6400 3350 6400
+Wire Wire Line
+	3350 6400 3350 6100
+$Comp
+L Motor:Motor_DC_ALT M?
+U 1 1 5FC427C1
+P 10250 6000
+F 0 "M?" V 10534 5950 50  0000 C CNN
+F 1 "Motor_DC_ALT" V 10443 5950 50  0000 C CNN
+F 2 "" H 10250 5910 50  0001 C CNN
+F 3 "~" H 10250 5910 50  0001 C CNN
+	1    10250 6000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6200 6100 7350 6100
+$Comp
+L Relay:ADW11 K?
+U 1 1 5FC4D0EB
+P 10050 5050
+F 0 "K?" V 9483 5050 50  0001 C CNN
+F 1 "Starter relay" V 9575 5050 50  0000 C CNN
+F 2 "Relay_THT:Relay_1P1T_NO_10x24x18.8mm_Panasonic_ADW11xxxxW_THT" H 11375 5000 50  0001 C CNN
+F 3 "https://www.panasonic-electric-works.com/pew/es/downloads/ds_dw_hl_en.pdf" H 10050 5050 50  0001 C CNN
+	1    10050 5050
+	0    -1   1    0   
+$EndComp
+$Comp
+L motogadget:mo.unit_blue U?
+U 1 1 5FBB03C8
+P 5700 5700
+F 0 "U?" H 5750 4837 50  0001 C CNN
+F 1 "mo.unit_blue" H 5750 4836 50  0000 C CNN
+F 2 "" H 5700 6350 50  0001 C CNN
+F 3 "" H 5700 6350 50  0001 C CNN
+	1    5700 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse F?
+U 1 1 5FBB94C0
+P 4850 6650
+F 0 "F?" H 4910 6696 50  0001 L CNN
+F 1 "Fuse 1A" V 4955 6650 50  0000 C CNN
+F 2 "" V 4780 6650 50  0001 C CNN
+F 3 "~" H 4850 6650 50  0001 C CNN
+	1    4850 6650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4700 1150 4700 6650
+Wire Wire Line
+	5050 6650 5850 6650
+Wire Wire Line
+	5850 6150 5850 6400
+Connection ~ 5850 6400
+Wire Wire Line
+	5850 6400 5850 6650
+Wire Wire Line
+	5850 6650 5850 7300
+Wire Wire Line
+	5850 7300 6100 7300
+Connection ~ 5850 6650
+Wire Wire Line
+	5850 6400 7650 6400
+Wire Wire Line
+	7350 6000 7350 6050
+Wire Wire Line
+	6200 6000 7350 6000
+Wire Wire Line
+	8350 6400 7950 6400
+Wire Wire Line
+	7350 6050 8000 6050
+Wire Wire Line
+	8000 6050 8000 5600
+Wire Wire Line
+	8000 5600 9500 5600
+Wire Wire Line
+	9500 5600 9500 4850
+Wire Wire Line
+	9500 4850 9750 4850
+Connection ~ 7350 6050
+Wire Wire Line
+	7350 6050 7350 6100
+Wire Wire Line
+	9250 5950 9250 5650
+Wire Wire Line
+	9250 5650 9750 5650
+Wire Wire Line
+	9750 5650 9750 5350
+Wire Wire Line
+	10350 5250 10350 5550
+Wire Wire Line
+	10350 5550 9950 5550
+Wire Wire Line
+	9950 5550 9950 6000
+Wire Wire Line
+	9950 6000 10050 6000
+Wire Wire Line
+	8350 5950 8350 6400
+Wire Wire Line
+	8350 5950 8950 5950
+Wire Wire Line
+	8950 5950 8950 6050
+Connection ~ 8950 5950
+Wire Wire Line
+	8950 5950 9250 5950
+Wire Wire Line
+	6200 4900 8200 4900
+Wire Wire Line
+	8200 4900 8200 2100
+Wire Wire Line
+	8200 2100 8750 2100
+$EndSCHEMATC

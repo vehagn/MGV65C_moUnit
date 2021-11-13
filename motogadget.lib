@@ -1,0 +1,106 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# mo.button
+#
+DEF mo.button B 0 40 Y Y 1 F N
+F0 "B" 0 0 50 H V C CNN
+F1 "mo.button" 0 300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -300 350 300 -350 0 1 0 N
+X GND blk 0 -350 100 D 50 50 1 1 O
+X start blu -300 -50 100 L 50 50 1 1 I
+X signal grn 300 0 100 R 50 50 1 1 O
+X light org -300 50 100 L 50 50 1 1 I
+X brake prp -300 -250 100 L 50 50 1 1 I
+X horn red -300 -150 100 L 50 50 1 1 I
+X turn_R wht -300 150 100 L 50 50 1 1 I
+X turn_L ylw -300 250 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# mo.unit_blue
+#
+DEF mo.unit_blue U 0 40 Y Y 1 F N
+F0 "U" 0 650 50 H V C CNN
+F1 "mo.unit_blue" 0 950 50 H V C CNN
+F2 "" 0 650 50 H I C CNN
+F3 "" 0 650 50 H I C CNN
+DRAW
+S -500 1350 500 -450 0 1 0 N
+X GND 0 -150 -450 100 D 50 50 1 1 w
+X aux2 1 -500 1250 100 L 50 50 1 1 I
+X turn_L 10 -500 -100 100 L 50 50 1 1 I
+X start 11 -500 -250 100 L 50 50 1 1 I
+X lock 12 -500 -400 100 L 50 50 1 1 I
+X aux2 13 500 1150 100 R 50 50 1 1 O
+X aux2 13 500 1250 100 R 50 50 1 1 O
+X aux1 14 500 950 100 R 50 50 1 1 O
+X ignition 15 500 800 100 R 50 50 1 1 O
+X hi_beam 16 500 650 100 R 50 50 1 1 O
+X light 17 500 500 100 R 50 50 1 1 O
+X brake 18 500 350 100 R 50 50 1 1 O
+X horn 19 500 200 100 R 50 50 1 1 O
+X aux1 2 -500 1100 100 L 50 50 1 1 I
+X turn_R 20 500 50 100 R 50 50 1 1 O
+X turn_L 21 500 -100 100 R 50 50 1 1 O
+X start 22 500 -400 100 R 50 50 1 1 O
+X start 22 500 -300 100 R 50 50 1 1 O
+X Bat+ 23 150 -450 100 D 50 50 1 1 W
+X kill 3 -500 950 100 L 50 50 1 1 I
+X stand 4 -500 800 100 L 50 50 1 1 I
+X lin 5 -500 650 100 L 50 50 1 1 I
+X light 6 -500 500 100 L 50 50 1 1 I
+X brake 7 -500 350 100 L 50 50 1 1 I
+X horn 8 -500 200 100 L 50 50 1 1 I
+X turn_R 9 -500 50 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# motoscopePro
+#
+DEF motoscopePro msp 0 40 Y Y 1 F N
+F0 "msp" 0 450 50 H V C CNN
+F1 "motoscopePro" 0 300 50 H V C CNN
+F2 "" 0 350 50 H I C CNN
+F3 "" 0 350 50 H I C CNN
+DRAW
+A 0 -300 854 206 1594 0 1 0 N 800 0 -800 0
+P 2 0 1 0 -800 0 800 0 N
+X GND blk -300 0 100 D 50 50 1 1 O
+X CAN_BUS blu 600 0 100 D 50 50 1 1 I
+X ignition bwm -450 0 100 D 50 50 1 1 I
+X push_btn grn -150 0 100 D 50 50 1 1 I
+X bus org 0 0 100 D 50 50 1 1 I
+X CAN_BUS prp 450 0 100 D 50 50 1 1 I
+X pwr red -600 0 100 D 50 50 1 1 I
+X speed wht 150 0 100 D 50 50 1 1 I
+X tacho ylw 300 0 100 D 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# mspBreakoutBoxA
+#
+DEF mspBreakoutBoxA breakoutA 0 40 Y Y 1 F N
+F0 "breakoutA" 0 100 50 V V C CNN
+F1 "mspBreakoutBoxA" 200 100 50 V V C CNN
+F2 "" -50 -300 50 H I C CNN
+F3 "" -50 -300 50 H I C CNN
+DRAW
+S -300 500 250 -500 0 1 0 N
+X fuel 0 -300 450 100 L 50 50 1 1 I
+X oil 1 -300 350 100 L 50 50 1 1 I
+X turn_R 2 -300 250 100 L 50 50 1 1 I
+X turn_L 3 -300 150 100 L 50 50 1 1 I
+X hi_beam 4 -300 50 100 L 50 50 1 1 I
+X neutral 5 -300 -50 100 L 50 50 1 1 I
+X error 6 -300 -150 100 L 50 50 1 1 I
+X bus 7 -300 -250 100 L 50 50 1 1 O
+X GND 8 -300 -350 100 L 50 50 1 1 w
+X +12V 9 -300 -450 100 L 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -1,0 +1,335 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Device_Fuse
+#
+DEF Device_Fuse F 0 0 N Y 1 F N
+F0 "F" 80 0 50 V V C CNN
+F1 "Device_Fuse" -75 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ *Fuse*
+$ENDFPLIST
+DRAW
+S -30 -100 30 100 0 1 10 N
+P 2 0 1 0 0 100 0 -100 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_L
+#
+DEF Device_L L 0 40 N N 1 F N
+F0 "L" -50 0 50 V V C CNN
+F1 "Device_L" 75 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Choke_*
+ *Coil*
+ Inductor_*
+ L_*
+$ENDFPLIST
+DRAW
+A 0 -75 25 -899 899 0 1 0 N 0 -100 0 -50
+A 0 -25 25 -899 899 0 1 0 N 0 -50 0 0
+A 0 25 25 -899 899 0 1 0 N 0 0 0 50
+A 0 75 25 -899 899 0 1 0 N 0 50 0 100
+X 1 1 0 150 50 D 50 50 1 1 P
+X 2 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_LED
+#
+DEF Device_LED D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Device_LED" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ LED*
+ LED_SMD:*
+ LED_THT:*
+$ENDFPLIST
+DRAW
+P 2 0 1 10 -50 -50 -50 50 N
+P 2 0 1 0 -50 0 50 0 N
+P 4 0 1 10 50 -50 50 50 -50 0 50 -50 N
+P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Motor_Motor_DC_ALT
+#
+DEF Motor_Motor_DC_ALT M 0 0 Y Y 1 F N
+F0 "M" 100 100 50 H V L CNN
+F1 "Motor_Motor_DC_ALT" 100 -200 50 H V L TNN
+F2 "" 0 -90 50 H I C CNN
+F3 "" 0 -90 50 H I C CNN
+$FPLIST
+ PinHeader*P2.54mm*
+ TerminalBlock*
+$ENDFPLIST
+DRAW
+C 0 -60 117 0 0 10 N
+P 4 0 0 0 -50 -170 -50 -200 50 -200 50 -170 N
+P 4 0 0 0 -50 50 -50 80 50 80 50 50 N
+P 5 0 0 0 -50 -130 -50 20 0 -80 50 20 50 -130 N
+P 2 0 1 0 0 80 0 100 N
+X + 1 0 200 100 D 50 50 1 1 P
+X - 2 0 -300 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Relay_ADW11
+#
+DEF Relay_ADW11 K 0 20 Y Y 1 F N
+F0 "K" 450 150 50 H V C CNN
+F1 "Relay_ADW11" 550 50 50 H V C CNN
+F2 "Relay_THT:Relay_1P1T_NO_10x24x18.8mm_Panasonic_ADW11xxxxW_THT" 1325 -50 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Relay*1P1T*NO*Panasonic*ADW11xxxxW*
+$ENDFPLIST
+DRAW
+T 0 -120 -140 40 0 1 1 R+ Normal 0 C C
+T 0 -120 140 40 0 1 1 S+ Normal 0 C C
+S -400 200 400 -200 1 1 10 f
+S -325 75 -75 -75 1 1 10 N
+P 2 1 1 10 -300 -75 -100 75 N
+P 2 1 1 0 -200 -200 -200 -75 N
+P 2 1 1 0 -200 200 -200 75 N
+P 2 1 1 10 -75 0 -50 0 N
+P 2 1 1 10 -25 0 0 0 N
+P 2 1 1 10 25 0 50 0 N
+P 2 1 1 10 25 0 50 0 N
+P 2 1 1 10 75 0 100 0 N
+P 2 1 1 10 125 0 150 0 N
+P 2 1 1 20 200 -100 125 150 N
+P 2 1 1 0 200 -100 200 -200 N
+P 2 1 1 0 300 150 300 200 N
+P 4 1 1 0 300 150 300 100 275 125 300 150 N
+X ~ 1 -200 300 100 D 50 50 1 1 P
+X ~ 3 300 300 100 D 50 50 1 1 P
+X ~ 5 200 -300 100 U 50 50 1 1 P
+X ~ 6 -200 -300 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Switch_SW_Push
+#
+DEF Switch_SW_Push SW 0 40 N N 1 F N
+F0 "SW" 50 100 50 H V L CNN
+F1 "Switch_SW_Push" 0 -60 50 H V C CNN
+F2 "" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+DRAW
+C -80 0 20 0 1 0 N
+C 80 0 20 0 1 0 N
+P 2 0 1 0 0 50 0 120 N
+P 2 0 1 0 100 50 -100 50 N
+X 1 1 -200 0 100 R 50 50 0 1 P
+X 2 2 200 0 100 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# Switch_SW_Push_45deg
+#
+DEF Switch_SW_Push_45deg SW 0 40 N N 1 F N
+F0 "SW" 120 40 50 H V L CNN
+F1 "Switch_SW_Push_45deg" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -46 46 20 0 1 0 N
+C 45 -47 20 0 1 0 N
+P 2 0 1 0 -20 100 100 -20 N
+P 2 0 1 0 40 40 80 80 N
+P 3 0 1 0 -100 100 -60 60 -60 60 N
+P 4 0 1 0 60 -60 100 -100 100 -100 100 -100 N
+X 1 1 -100 100 0 R 50 50 0 1 P
+X 2 2 100 -100 0 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# motogadget_mo.button
+#
+DEF motogadget_mo.button B 0 40 Y Y 1 F N
+F0 "B" 0 0 50 H V C CNN
+F1 "motogadget_mo.button" 0 300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -300 350 300 -350 0 1 0 N
+X GND blk 0 -350 100 D 50 50 1 1 O
+X start blu -300 -50 100 L 50 50 1 1 I
+X signal grn 300 0 100 R 50 50 1 1 O
+X light org -300 50 100 L 50 50 1 1 I
+X brake prp -300 -250 100 L 50 50 1 1 I
+X horn red -300 -150 100 L 50 50 1 1 I
+X turn_R wht -300 150 100 L 50 50 1 1 I
+X turn_L ylw -300 250 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# motogadget_mo.unit_blue
+#
+DEF motogadget_mo.unit_blue U 0 40 Y Y 1 F N
+F0 "U" 0 650 50 H V C CNN
+F1 "motogadget_mo.unit_blue" 0 950 50 H V C CNN
+F2 "" 0 650 50 H I C CNN
+F3 "" 0 650 50 H I C CNN
+DRAW
+S -500 1350 500 -450 0 1 0 N
+X GND 0 -150 -450 100 D 50 50 1 1 w
+X aux2 1 -500 1250 100 L 50 50 1 1 I
+X turn_L 10 -500 -100 100 L 50 50 1 1 I
+X start 11 -500 -250 100 L 50 50 1 1 I
+X lock 12 -500 -400 100 L 50 50 1 1 I
+X aux2 13 500 1150 100 R 50 50 1 1 O
+X aux2 13 500 1250 100 R 50 50 1 1 O
+X aux1 14 500 950 100 R 50 50 1 1 O
+X ignition 15 500 800 100 R 50 50 1 1 O
+X hi_beam 16 500 650 100 R 50 50 1 1 O
+X light 17 500 500 100 R 50 50 1 1 O
+X brake 18 500 350 100 R 50 50 1 1 O
+X horn 19 500 200 100 R 50 50 1 1 O
+X aux1 2 -500 1100 100 L 50 50 1 1 I
+X turn_R 20 500 50 100 R 50 50 1 1 O
+X turn_L 21 500 -100 100 R 50 50 1 1 O
+X start 22 500 -400 100 R 50 50 1 1 O
+X start 22 500 -300 100 R 50 50 1 1 O
+X Bat+ 23 150 -450 100 D 50 50 1 1 W
+X kill 3 -500 950 100 L 50 50 1 1 I
+X stand 4 -500 800 100 L 50 50 1 1 I
+X lin 5 -500 650 100 L 50 50 1 1 I
+X light 6 -500 500 100 L 50 50 1 1 I
+X brake 7 -500 350 100 L 50 50 1 1 I
+X horn 8 -500 200 100 L 50 50 1 1 I
+X turn_R 9 -500 50 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# motogadget_motoscopePro
+#
+DEF motogadget_motoscopePro msp 0 40 Y Y 1 F N
+F0 "msp" 0 450 50 H V C CNN
+F1 "motogadget_motoscopePro" 0 300 50 H V C CNN
+F2 "" 0 350 50 H I C CNN
+F3 "" 0 350 50 H I C CNN
+DRAW
+A 0 -300 854 206 1594 0 1 0 N 800 0 -800 0
+P 2 0 1 0 -800 0 800 0 N
+X GND blk -300 0 100 D 50 50 1 1 O
+X CAN_BUS blu 600 0 100 D 50 50 1 1 I
+X ignition bwm -450 0 100 D 50 50 1 1 I
+X push_btn grn -150 0 100 D 50 50 1 1 I
+X bus org 0 0 100 D 50 50 1 1 I
+X CAN_BUS prp 450 0 100 D 50 50 1 1 I
+X pwr red -600 0 100 D 50 50 1 1 I
+X speed wht 150 0 100 D 50 50 1 1 I
+X tacho ylw 300 0 100 D 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# motogadget_mspBreakoutBoxA
+#
+DEF motogadget_mspBreakoutBoxA breakoutA 0 40 Y Y 1 F N
+F0 "breakoutA" 0 100 50 V V C CNN
+F1 "motogadget_mspBreakoutBoxA" 200 100 50 V V C CNN
+F2 "" -50 -300 50 H I C CNN
+F3 "" -50 -300 50 H I C CNN
+DRAW
+S -300 500 250 -500 0 1 0 N
+X fuel 0 -300 450 100 L 50 50 1 1 I
+X oil 1 -300 350 100 L 50 50 1 1 I
+X turn_R 2 -300 250 100 L 50 50 1 1 I
+X turn_L 3 -300 150 100 L 50 50 1 1 I
+X hi_beam 4 -300 50 100 L 50 50 1 1 I
+X neutral 5 -300 -50 100 L 50 50 1 1 I
+X error 6 -300 -150 100 L 50 50 1 1 I
+X bus 7 -300 -250 100 L 50 50 1 1 O
+X GND 8 -300 -350 100 L 50 50 1 1 w
+X +12V 9 -300 -450 100 L 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# motorcycle_Rectifier
+#
+DEF motorcycle_Rectifier U 0 40 Y Y 1 F N
+F0 "U" 0 -150 50 H V C CNN
+F1 "motorcycle_Rectifier" 0 150 50 H V C CNN
+F2 "" 0 -150 50 H I C CNN
+F3 "" 0 -150 50 H I C CNN
+DRAW
+S -300 250 300 -250 0 1 0 N
+X In ~ 300 -50 100 R 50 50 1 1 W
+X Out ~ -300 50 100 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+# motorcycle_battery
+#
+DEF motorcycle_battery Bat 0 40 Y Y 1 F N
+F0 "Bat" 0 50 50 H V C CNN
+F1 "motorcycle_battery" 0 -100 50 H V C CNN
+F2 "" 0 100 50 H I C CNN
+F3 "" 0 100 50 H I C CNN
+DRAW
+S -350 200 350 -200 0 1 0 N
+S -300 250 -200 200 0 1 0 N
+S 200 250 300 200 0 1 0 N
+X +12V ~ -250 250 100 U 50 50 1 1 w
+X GND ~ 250 250 100 U 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# motorcycle_oilPressure
+#
+DEF motorcycle_oilPressure OIL 0 40 Y Y 1 F N
+F0 "OIL" 0 50 50 H V C CNN
+F1 "motorcycle_oilPressure" 0 -50 50 H V C CNN
+F2 "" 0 50 50 H I C CNN
+F3 "" 0 50 50 H I C CNN
+DRAW
+S -250 100 300 -100 0 1 0 N
+X oil ~ 300 0 100 R 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# motorcycle_speedSensor
+#
+DEF motorcycle_speedSensor spd 0 40 Y Y 1 F N
+F0 "spd" 0 -50 50 H V C CNN
+F1 "motorcycle_speedSensor" 0 50 50 H V C CNN
+F2 "" 0 -50 50 H I C CNN
+F3 "" 0 -50 50 H I C CNN
+DRAW
+S 300 100 -250 -100 0 1 0 N
+X signal ~ 300 0 100 R 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# power_Earth
+#
+DEF power_Earth #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_Earth" 0 -150 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -25 -75 25 -75 N
+P 2 0 1 0 -5 -100 5 -100 N
+P 2 0 1 0 0 -50 0 0 N
+P 2 0 1 0 50 -50 -50 -50 N
+X Earth 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library

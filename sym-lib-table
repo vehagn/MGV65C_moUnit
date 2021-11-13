@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name motogadget)(type Legacy)(uri ${KIPRJMOD}/motogadget.lib)(options "")(descr ""))
+  (lib (name motorcycle)(type Legacy)(uri ${KIPRJMOD}/motorcycle.lib)(options "")(descr ""))
+)

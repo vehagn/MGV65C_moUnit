@@ -1,0 +1,60 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Rectifier
+#
+DEF Rectifier U 0 40 Y Y 1 F N
+F0 "U" 0 -150 50 H V C CNN
+F1 "Rectifier" 0 150 50 H V C CNN
+F2 "" 0 -150 50 H I C CNN
+F3 "" 0 -150 50 H I C CNN
+DRAW
+S -300 250 300 -250 0 1 0 N
+X In ~ 300 -50 100 R 50 50 1 1 W
+X Out ~ -300 50 100 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+# battery
+#
+DEF battery Bat 0 40 Y Y 1 F N
+F0 "Bat" 0 50 50 H V C CNN
+F1 "battery" 0 -100 50 H V C CNN
+F2 "" 0 100 50 H I C CNN
+F3 "" 0 100 50 H I C CNN
+DRAW
+S -350 200 350 -200 0 1 0 N
+S -300 250 -200 200 0 1 0 N
+S 200 250 300 200 0 1 0 N
+X +12V ~ -250 250 100 U 50 50 1 1 w
+X GND ~ 250 250 100 U 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# oilPressure
+#
+DEF oilPressure OIL 0 40 Y Y 1 F N
+F0 "OIL" 0 50 50 H V C CNN
+F1 "oilPressure" 0 -50 50 H V C CNN
+F2 "" 0 50 50 H I C CNN
+F3 "" 0 50 50 H I C CNN
+DRAW
+S -250 100 300 -100 0 1 0 N
+X oil ~ 300 0 100 R 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# speedSensor
+#
+DEF speedSensor spd 0 40 Y Y 1 F N
+F0 "spd" 0 -50 50 H V C CNN
+F1 "speedSensor" 0 50 50 H V C CNN
+F2 "" 0 -50 50 H I C CNN
+F3 "" 0 -50 50 H I C CNN
+DRAW
+S 300 100 -250 -100 0 1 0 N
+X signal ~ 300 0 100 R 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+#End Library
